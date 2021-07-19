@@ -1,13 +1,19 @@
 .header {
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-evenly;
+  background-color: white;
   border-bottom: 0.1px solid lightgray;
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
   z-index: 999;
+}
+
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: auto;
 }
 
 .header_left {
@@ -31,9 +37,12 @@
 }
 
 .header_search > input {
+  padding-left: 7px;
+  width: 280px;
   outline: none;
   border: none;
   background: none;
+  box-sizing: border-box;
 }
 
 .header_right {
