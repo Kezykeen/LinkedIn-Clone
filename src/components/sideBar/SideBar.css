@@ -19,8 +19,7 @@
   padding-bottom: 10px;
 }
 
-.sidebar_top > img {
-  margin-bottom: -20px;
+.sidebar_header_logo {
   width: 100%;
   height: 60px;
   border-top-right-radius: 10px;
@@ -36,6 +35,18 @@
 }
 
 .sidebar_avatar {
+  object-fit: contain;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  font-size: 1.25rem;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  justify-content: center;
+  margin-top: -2rem;
   margin-bottom: 10px;
 }
 
@@ -43,7 +54,7 @@
   padding: 10px;
   margin-bottom: 10px;
   background-color: white;
-  border: 1px sold lightgray;
+  border: 1px solid lightgray;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
@@ -76,6 +87,7 @@
 
 .sidebar_bottom > p {
   font-size: 13px;
+  font-weight: 500;
   padding-bottom: 10px;
 }
 
