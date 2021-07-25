@@ -1,7 +1,12 @@
+import { Avatar } from "@material-ui/core";
 import React from "react";
+import { useSelector } from "react-redux";
+import { selectUser } from "../../features/userSlice";
 import "./SideBar.css";
 
 const SideBar = () => {
+  const user = useSelector(selectUser);
+
   const recentItem = (topic) => (
     <div className="sidebar_recentItem">
       <span className="sidebar_hash">#</span>
@@ -18,13 +23,17 @@ const SideBar = () => {
           alt="splash gradrient background logo"
         />
 
-        <img
+        {/* <img
           className="sidebar_avatar"
           src="https:///compassionate-leakey-e9b16b.netlify.app/images/IG_Sonny.jpeg"
           alt=""
-        />
-        <h2>Okoro Kingsley</h2>
-        <h4>Okorokingsley250@gmail.com</h4>
+        /> */}
+
+        <Avatar src={user.photoUrl} className="sidebar_avatar">
+          {user.displayName[0].toUpperCase()}
+        </Avatar>
+        <h2>{user.displayName}</h2>
+        <h4>{user.email}</h4>
       </div>
 
       <div className="sidebar_stats">

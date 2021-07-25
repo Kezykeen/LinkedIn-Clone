@@ -13,6 +13,7 @@
 
 .headerOption_icon {
   object-fit: contain;
+  font-size: 1rem !important;
   height: 25px !important;
   width: 25px !important;
 }

@@ -5,15 +5,15 @@ import {
   ShareOutlined,
   ThumbUpAltOutlined,
 } from "@material-ui/icons";
-import React from "react";
+import React, { forwardRef } from "react";
 import InputOption from "../inputOption/InputOption";
 import "./Post.css";
 
-const Post = ({ name, description, message, photoUrl }) => {
+const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
   return (
-    <div className="post">
+    <div ref={ref} className="post">
       <div className="post_header">
-        <Avatar />
+        <Avatar src={photoUrl}>{name[0].toUpperCase()}</Avatar>
         <div className="post_info">
           <h2>{name}</h2>
           <p>{description}</p>
@@ -32,6 +32,6 @@ const Post = ({ name, description, message, photoUrl }) => {
       </div>
     </div>
   );
-};
+});
 
 export default Post;
