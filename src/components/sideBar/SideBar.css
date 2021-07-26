@@ -1,6 +1,6 @@
 .sidebar {
   position: sticky;
-  top: 80px;
+  top: 60px;
   flex: 0.2;
   border-radius: 10px;
   text-align: center;
@@ -28,26 +28,26 @@
 }
 .sidebar_top > h4 {
   color: gray;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 .sidebar_top > h2 {
-  font-size: 18px;
+  font-size: 1.6rem;
 }
 
 .sidebar_avatar {
-  object-fit: contain;
-  width: 70px;
-  height: 70px;
+  object-fit: contain !important;
+  width: 70px !important;
+  height: 70px !important;
   display: flex;
   overflow: hidden;
-  position: relative;
+  position: relative !important;
   font-size: 1.25rem;
   align-items: center;
-  flex-shrink: 0;
+  flex-shrink: 0 !important;
   border-radius: 50%;
-  justify-content: center;
-  margin-top: -2rem;
-  margin-bottom: 10px;
+  justify-content: center !important;
+  margin-top: -2rem !important;
+  margin-bottom: 10px !important;
 }
 
 .sidebar_stats {
@@ -67,7 +67,7 @@
 
 .sidebar_stat > p {
   color: gray;
-  font-size: 13px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -86,20 +86,26 @@
 }
 
 .sidebar_bottom > p {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 500;
   padding-bottom: 10px;
 }
 
 .sidebar_recentItem {
   display: flex;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: gray;
   font-weight: bolder;
   cursor: pointer;
   margin-bottom: 5px;
   padding: 5px;
 }
+
+.sidebar_recentItem > p,
+.sidebar_hash {
+  font-size: 1.2rem;
+}
+
 .sidebar_recentItem:hover {
   background-color: whitesmoke;
   border-radius: 10px;

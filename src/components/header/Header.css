@@ -12,7 +12,7 @@
 .header_container {
   display: flex;
   justify-content: space-between;
-  width: 85%;
+  width: 82%;
   margin: auto;
 }
 
@@ -47,4 +47,6 @@
 
 .header_right {
   display: flex;
+  justify-content: space-between;
+  width: 40%;
 }

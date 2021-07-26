@@ -20,11 +20,15 @@
 }
 
 .post_info > h2 {
-  font-size: 15px;
+  font-size: 1.4rem;
 }
 
 .post_body {
   overflow-wrap: anywhere;
+}
+
+.post_body > p {
+  font-size: 1.4rem;
 }
 
 .post_buttons {
