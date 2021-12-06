@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
   CalendarViewDay,
-  Create,
   EventNote,
   Image,
   Subscriptions,

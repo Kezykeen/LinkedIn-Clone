@@ -36,8 +36,8 @@
 
 .sidebar_avatar {
   object-fit: contain !important;
-  width: 70px !important;
-  height: 70px !important;
+  width: 50px !important;
+  height: 50px !important;
   display: flex;
   overflow: hidden;
   position: relative !important;

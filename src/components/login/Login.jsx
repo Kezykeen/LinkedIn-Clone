@@ -57,50 +57,52 @@ const Login = () => {
   };
 
   return (
-    <div className="login">
-      <img
-        src="https://news.hitb.org/sites/default/files/styles/large/public/field/image/500px-LinkedIn_Logo.svg__1.png?itok=q_lR0Vks"
-        alt="LinkedIn Logo"
-      />
-      <form>
-        <input
-          type="text"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Full name"
-          required
+    <div className="login_container">
+      <div className="login">
+        <img
+          src="https://news.hitb.org/sites/default/files/styles/large/public/field/image/500px-LinkedIn_Logo.svg__1.png?itok=q_lR0Vks"
+          alt="LinkedIn Logo"
         />
-        <input
-          type="text"
-          value={profilePic}
-          onChange={(e) => setProfilePic(e.target.value)}
-          placeholder="Profile pic"
-        />
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
-          required
-        />
-        <input
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-          required
-        />
-        <button type="submit" onClick={LoginToApp}>
-          Sign In
-        </button>
-      </form>
+        <form>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="text"
+            value={profilePic}
+            onChange={(e) => setProfilePic(e.target.value)}
+            placeholder="Profile pic"
+          />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Email"
+            required
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            placeholder="Password"
+            required
+          />
+          <button type="submit" onClick={LoginToApp}>
+            Sign In
+          </button>
+        </form>
 
-      <p>
-        Not a member?{" "}
-        <span className="login_register" onClick={register}>
-          Register now
-        </span>
-      </p>
+        <p>
+          Not a member?{" "}
+          <span className="login_register" onClick={register}>
+            Register now
+          </span>
+        </p>
+      </div>
     </div>
   );
 };

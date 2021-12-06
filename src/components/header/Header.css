@@ -20,10 +20,11 @@
   display: flex;
 }
 
-.header_left > img {
+.header_left > svg {
   object-fit: contain;
   height: 40px;
   margin-right: 10px;
+  color: #0a66c2;
 }
 
 .header_search {
